@@ -1,16 +1,60 @@
 ---
-
+const title = "Milo Boynton";
+const description = "Personal site";
+const links = [
+  { href: "/background", label: "background" },
+  // { href: "/projects", label: "projects" },
+];
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <style>
+      :root { color-scheme: light dark; }
+      body {
+        margin: 0;
+        font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      }
+      main {
+        max-width: 720px;
+        margin: 48px auto;
+        padding: 0 20px;
+      }
+      a {
+        text-decoration: none;
+        border-bottom: 1px solid currentColor;
+      }
+      a:hover { opacity: 0.75; }
+      .muted { opacity: 0.75; }
+      ul { padding-left: 18px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>{title}</h1>
+      <p class="muted">"Scientifically, traditions are an idiot thing." </p>
+
+      <p>
+        Engineer. Machinist. Gunslinger. In that order.      
+      </p>
+
+      <h2>links</h2>
+      <ul>
+        {links.map((l) => (
+          <li><a href={l.href}>{l.label}</a></li>
+        ))}
+      </ul>
+
+      <h2>elsewhere</h2>
+		<ul>
+			<li><a href="https://x.com/miloboynton">x</a></li>
+			<li><a href="https://github.com/PL3IADES">github</a></li>
+		</ul>
+
+    </main>
+  </body>
 </html>
