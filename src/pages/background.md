@@ -7,7 +7,7 @@ title: Background
 ## Professional Experience
 
 ### Lead Mechanical Engineer, Pilgrim Inc — Dec 2025 – Present
-- Building biotech and medtech for the modern warfighter.
+- Building pathogen detection systems for the modern homeland and battlefield.
 
 ### R&D Engineer, Flux Defense — Jul 2025 – Dec 2025
 - Led CNC machining efforts, programming, setup, and precision machining of prototype and production firearm components while maintaining tight tolerances in advanced accessory systems.
